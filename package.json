@@ -1,11 +1,10 @@
 {
-  "name": "mdc-button-demo",
+  "name": "mdc-web-catalog",
   "version": "0.1.0",
   "private": true,
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "start": "parcel (button|checkbox)/index.html --open",
-    "build": "parcel build ./index.html"
+    "start": "node index.js"
   },
   "dependencies": {
     "material-components-web": "^0.41.1"
@@ -14,6 +13,7 @@
     "node-sass": "^4.10.0",
     "parcel-bundler": "^1.10.3",
     "posthtml-include": "^1.2.0",
-    "sass": "^1.15.1"
+    "sass": "^1.15.1",
+    "express": "^4.16.4"
   }
 }

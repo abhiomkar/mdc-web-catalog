@@ -1,0 +1,18 @@
+{
+  "name": "mdc-button-demo",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel button/index.html --open",
+    "build": "parcel build ./index.html"
+  },
+  "dependencies": {
+    "material-components-web": "^0.41.1"
+  },
+  "devDependencies": {
+    "sass": "^1.14.3",
+    "parcel-bundler": "^1.10.3",    
+    "posthtml-include": "^1.2.0"
+  }
+}

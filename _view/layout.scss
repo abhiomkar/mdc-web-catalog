@@ -1,0 +1,42 @@
+@import "@material/typography/mdc-typography";
+@import "@material/list/mdc-list";
+@import "@material/typography/mixins";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 300px;
+}
+
+.demo-container {
+  padding-bottom: 80px;
+}
+
+.demo-resources,
+.demo-section-title {
+  border-bottom: 1px solid rgba(0,0,0,.87)
+}
+
+.demo-subtitle {
+  @include mdc-typography(subtitle1);
+  
+  margin: 32px 0 32px 0;  
+}

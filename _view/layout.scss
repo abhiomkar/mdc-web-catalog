@@ -1,4 +1,6 @@
 @import "@material/typography/mdc-typography";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 @import "@material/typography/mixins";
 
@@ -10,8 +12,30 @@ html, body {
 }
 
 body {
-  max-width: 900px;
+  display: flex;
+  height: 100vh;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: hidden;
+  height: 100%;
+  max-width: 840px;
   margin: 0 auto;
+}
+
+.app-bar {
+  position: absolute;
+}
+
+// only apply this style if below top app bar
+.mdc-top-app-bar {
+  z-index: 7;
 }
 
 .hero {

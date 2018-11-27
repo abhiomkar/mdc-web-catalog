@@ -1,5 +1,10 @@
 @import "@material/button/mdc-button";
+@import "@material/button/mixins";
 
 .mdc-button {
   margin-left: 26px;
+}
+
+.demo-button-shaped {
+  @include mdc-button-shape-radius(50%);
 }

@@ -40,7 +40,9 @@ async function runBundle(entryFile) {
 const entryFiles = [
   path.join(__dirname, `./button/index.html`),
   path.join(__dirname, `./checkbox/index.html`),
+  path.join(__dirname, `./drawer/index.html`),
 ];
+
 for (const entryFile of entryFiles) {
   runBundle(entryFile);
 }
